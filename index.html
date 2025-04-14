@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Pintor de Alto Padrão</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script defer src="assets/js/index.js"></script>
+
+</head>
+
+<body class="bg-white text-black overflow-x-hidden">
+  <header class="bg-black text-white sticky top-0 z-50 shadow-md">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24 border-b-2 border-orange-500">
+      <a href="#home">
+        <img src="assets/img/logo.png" alt="Logo Thomas"
+          class="h-16 w-auto transition-transform duration-300 hover:scale-105" />
+      </a>
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav class="hidden md:flex space-x-10 font-medium text-lg">
+        <a href="#home"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Início</a>
+        <a href="#servicos"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Serviços</a>
+        <a href="#antes-depois"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Antes
+          e Depois</a>
+        <a href="#ferramentas"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Nossas
+          Ferramentas</a>
+        <a href="#trabalhe-conosco"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Trabalhe
+          conosco</a>
+        <a href="#sobre"
+          class="relative hover:text-orange-500 transition duration-300 after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">Sobre</a>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 transition-opacity duration-300 ease-in-out">
+      <div
+        class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none">
+      </div>
+      <div
+        class="absolute top-0 right-0 h-full w-3/4 sm:w-2/5 bg-black text-white shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6">
+        <button onclick="toggleMenu()"
+          class="absolute top-4 right-4 text-white hover:text-gray-400 text-3xl transition-all duration-200">
+          &times;
+        </button>
+
+
+        <nav class="mt-12 text-lg font-medium text-white space-y-6">
+          <a href="#home" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Início</a>
+          <a href="#servicos" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Serviços</a>
+          <a href="#antes-depois" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Antes e
+            Depois</a>
+          <a href="#ferramentas" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Nossas
+            Ferramentas</a>
+          <a href="#trabalhe-conosco" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Trabalhe
+            conosco</a>
+          <a href="#sobre" onclick="toggleMenu()" class="block hover:text-orange-500 transition">Sobre</a>
+        </nav>
+      </div>
+    </div>
+
+
+  </header>
+
+  <section id="home" class="bg-gradient-to-r from-black via-neutral-900 to-black text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          Transformando Ambientes com Pintura de Alto Padrão
+        </h1>
+        <p class="text-lg text-gray-300 mb-6">
+          Somos especialistas em trazer sofisticação e acabamento impecável para residências e comércios.
+        </p>
+        <a href="https://wa.me/5515996602182?text=Olá%2C+Gostaria+de+solicitar+um+orçamento." target="_blank"
+          class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition">
+          Solicitar Orçamento
+        </a>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-end">
+        <img src="assets/img/logo.png" alt="Thomas pintando" class="w-48 md:w-auto" />
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="bg-gradient-to-b from-white to-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-16 tracking-tight relative inline-block">
+        <span class="relative z-10">Serviços Realizados</span>
+        <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-orange-500 rounded-full"></span>
+      </h2>
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"> 
+
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200">
+          <div class="swiper servicoSwiper h-[300px] md:h-[400px] bg-white">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/servicos/apartamento/1.jpg"
+                  class="h-full w-full object-cover" /></div>
+              <div class="swiper-slide"><img src="assets/img/servicos/apartamento/2.jpg"
+                  class="h-full w-full object-cover" /></div>
+              <div class="swiper-slide"><img src="assets/img/servicos/apartamento/3.jpg"
+                  class="h-full w-full object-cover" /></div>
+              <div class="swiper-slide"><img src="assets/img/servicos/apartamento/4.jpg"
+                  class="h-full w-full object-cover" /></div>
+              <div class="swiper-slide"><img src="assets/img/servicos/apartamento/5.jpg"
+                  class="h-full w-full object-cover" /></div>
+            </div>
+            <div class="swiper-pagination !bottom-2"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-orange-600 mb-2">Pintura de apartamento no alto padrão</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Serviço completo realizado em todas as etapas do apartamento, desde a preparação até os acabamentos
+              finais. Cada detalhe foi executado com excelência para garantir um resultado de alto padrão e
+              durabilidade.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200">
+          <div class="swiper servicoSwiper h-[300px] md:h-[400px] bg-white">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/2.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/1.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/3.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/4.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/5.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/casa/6.jpg" class="h-full w-full object-cover" />
+              </div>
+            </div>
+            <div class="swiper-pagination !bottom-2"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-orange-600 mb-2">Pintura Residencial</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Projeto completo de pintura em residência, com atenção a cada detalhe para garantir um acabamento de alta
+              qualidade e transformar os ambientes com sofisticação.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200">
+          <div class="swiper servicoSwiper h-[300px] md:h-[400px] bg-white">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/1.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/2.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/3.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/4.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/5.jpg" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/servicos/ype/6.jpg" class="h-full w-full object-cover" />
+              </div>
+            </div>
+            <div class="swiper-pagination !bottom-2"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-orange-600 mb-2">Serviço completo com excelência</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Serviço completo realizado em toda a residência, desde a preparação até o acabamento final. Cada etapa foi
+              executada com excelência para transformar completamente o ambiente.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="antes-depois" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12 tracking-tight relative inline-block">
+        <span class="relative z-10">Antes e Depois</span>
+        <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-orange-500 rounded-full"></span>
+      </h2>
+
+      <div class="grid gap-12 md:gap-16 md:grid-cols-2">
+        <div
+          class="bg-white rounded-2xl shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.01]">
+          <div class="p-5 sm:p-6 md:p-8">
+            <h3 class="text-xl sm:text-2xl font-bold text-orange-600 mb-6 border-b border-orange-100 pb-3">Fachada
+              Externa</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center">
+              <div class="text-center">
+                <span
+                  class="inline-block bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-3">
+                  Antes
+                </span>
+                <img src="assets/img/servicos/antes e depois/a.jpg" alt="Antes"
+                  class="rounded-xl object-cover w-full h-60 sm:h-64 shadow-md">
+              </div>
+              <div class="text-center">
+                <span
+                  class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-3">
+                  Depois
+                </span>
+                <img src="assets/img/servicos/antes e depois/d.jpg" alt="Depois"
+                  class="rounded-xl object-cover w-full h-60 sm:h-64 shadow-md">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.01]">
+          <div class="p-5 sm:p-6 md:p-8">
+            <h3 class="text-xl sm:text-2xl font-bold text-orange-600 mb-6 border-b border-orange-100 pb-3">Fachada
+              Externa</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center">
+              <div class="text-center">
+                <span
+                  class="inline-block bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-3">
+                  Antes
+                </span>
+                <img src="assets/img/servicos/antes e depois/dd (1).webp" alt="Antes"
+                  class="rounded-xl object-cover w-full h-60 sm:h-64 shadow-md">
+              </div>
+              <div class="text-center">
+                <span
+                  class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-3">
+                  Depois
+                </span>
+                <img src="assets/img/servicos/antes e depois/aa.webp" alt="Depois"
+                  class="rounded-xl object-cover w-full h-60 sm:h-64 shadow-md">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <section id="ferramentas" class="bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-left text-gray-800 mb-12 tracking-tight relative inline-block">
+        <span class="relative z-10">Algumas de Nossas Ferramentas</span>
+        <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-orange-500 rounded-full"></span>
+      </h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        <img src="assets/img/ferramentas/pincel.jpg" alt="Pincel" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/fita.jpg" alt="Fita" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/rolo.png" alt="Rolo" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/papel.jpg" alt="Papel" class="h-36 object-contain" />
+
+        <img src="assets/img/ferramentas/plastico.webp" alt="Plástico" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/lavadora.webp" alt="Lavadora" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/aspirador.jpg" alt="Aspirador" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/bico.webp" alt="Bico pintura" class="h-36 object-contain" />
+
+        <img src="assets/img/ferramentas/rossadeira.webp" alt="Roçadeira" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/serra.webp" alt="Serra" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/andaime.jpeg" alt="Andaime" class="h-36 object-contain" />
+        <img src="assets/img/ferramentas/compressor.webp" alt="Compressor" class="h-36 object-contain" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="trabalhe-conosco" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-xl mx-auto">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-left text-gray-800 mb-12 tracking-tight relative inline-block">
+        <span class="relative z-10">Trabalhe Conosco</span>
+        <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-orange-500 rounded-full"></span>
+      </h2>
+
+      <form id="trabalheForm" class="space-y-4">
+        <input type="text" id="nome" placeholder="Nome completo"
+          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none" required />
+        <input type="text" id="cidade" placeholder="Cidade"
+          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none" required />
+
+        <div>
+          <label class="block mb-1 text-black">Possui experiência?</label>
+          <select id="experiencia" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none"
+            required>
+            <option value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+
+        <textarea id="detalheExperiencia" placeholder="Descreva sua experiência"
+          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none hidden"></textarea>
+
+        <div>
+          <label class="block mb-1 text-black">Você é:</label>
+          <select id="funcao" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none" required>
+            <option value="">Selecione</option>
+            <option value="Pintor">Pintor</option>
+            <option value="Ajudante">Ajudante</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1 text-black">Possui meio de transporte?</label>
+          <select id="transporte" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none"
+            required>
+            <option value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition">
+          Enviar via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-gray-300 py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <div id="sobre">
+        <h3 class="text-2xl font-semibold text-white flex items-center mb-4">
+          <i class="fas fa-paint-brush text-orange-500 mr-3"></i> Sobre Nós
+        </h3>
+        <p class="text-gray-400 leading-relaxed">
+          Somos especialistas em pintura de alto padrão. Compromisso, excelência nos acabamentos e uso das melhores
+          ferramentas para garantir um resultado impecável.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold text-white flex items-center mb-4">
+          <i class="fas fa-phone-alt text-orange-500 mr-3"></i> Contato
+        </h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><i class="fas fa-map-marker-alt text-orange-500 mr-2"></i> Tatuí, SP</li>
+          <li><i class="fas fa-phone text-orange-500 mr-2"></i> (15) 99660-2182</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold text-white flex items-center mb-4">
+          <i class="fas fa-share-alt text-orange-500 mr-3"></i> Redes Sociais
+        </h3>
+        <div class="flex space-x-6 text-lg">
+          <a href="https://www.facebook.com/thomas.santos.3597789/" class="hover:text-orange-500 transition"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/thomas_pintor_tatui?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="hover:text-orange-500 transition"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5515996602182?" class="hover:text-orange-500 transition"><i
+              class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
+      © 2025 <span class="text-white font-semibold">Thomas Vitcoski Pintor</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <a href="https://wa.me/5515996602182" target="_blank"
+    class="fixed bottom-5 right-5 w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg z-50 transition-all duration-300 animate-pulse hover:animate-none"
+    aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true  
+    });
+  </script>
+
+</body>
+
+</html>
