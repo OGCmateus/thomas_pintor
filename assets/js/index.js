@@ -93,3 +93,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function setupSlider(containerId, imageId, handleId) {
+  const container = document.getElementById(containerId);
+  const image = document.getElementById(imageId);
+  const handle = document.getElementById(handleId);
+
+  container.addEventListener("mousemove", (e) => {
+    const rect = container.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    const percent = (offsetX / rect.width) * 100;
+    image.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+    handle.style.left = `${percent}%`;
+  });
+
+  container.addEventListener("touchmove", (e) => {
+    const touch = e.touches[0];
+    const rect = container.getBoundingClientRect();
+    const offsetX = touch.clientX - rect.left;
+    const percent = (offsetX / rect.width) * 100;
+    image.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+    handle.style.left = `${percent}%`;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupSlider("slider-container-1", "slider-image-1", "slider-handle-1");
+  setupSlider("slider-container-2", "slider-image-2", "slider-handle-2");
+});
